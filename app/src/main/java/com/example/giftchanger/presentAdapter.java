@@ -35,7 +35,6 @@ public class presentAdapter extends RecyclerView.Adapter<presentAdapter.ViewHold
         holder.presentView.setImageResource(present.getPresentResource());
         holder.nameView.setText(present.getName());
         holder.priceView.setText(present.getPrice());
-        holder.fameView.setText(present.getFame());
     }
 
     @Override
@@ -45,14 +44,13 @@ public class presentAdapter extends RecyclerView.Adapter<presentAdapter.ViewHold
 
     public static class ViewHolder extends RecyclerView.ViewHolder {//вложенный класс (вроде)
         final ImageView presentView;
-        final TextView nameView, priceView, fameView;
+        final TextView nameView, priceView;
 
         ViewHolder(View view) {
             super(view);
            presentView = view.findViewById(R.id.presentResource);
             nameView = view.findViewById(R.id.name);
             priceView = view.findViewById(R.id.price);
-            fameView = view.findViewById(R.id.fame);
         }
     }
 }

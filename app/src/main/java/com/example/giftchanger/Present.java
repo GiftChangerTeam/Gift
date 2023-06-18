@@ -3,13 +3,12 @@ package com.example.giftchanger;
 public class Present {  //просто класс
     private String name;
     private String price;
-    private String fame;
+
     private int presentResource;
 
-    public Present(String name, String price, String fame, int presentResource) {
+    public Present(String name, String price, int presentResource) {
         this.name = name;
         this.price = price;
-        this.fame = fame;
         this.presentResource = presentResource;
     }
 
@@ -21,10 +20,10 @@ public class Present {  //просто класс
         this.presentResource = presentResource;
     }
 
-    public Present(String name, String price, String fame) {
+    public Present(String name, String price) {
         this.name = name;
         this.price = price;
-        this.fame = fame;
+
     }
 
     public String getName() {
@@ -43,11 +42,4 @@ public class Present {  //просто класс
         this.price = price;
     }
 
-    public String getFame() {
-        return fame;
-    }
-
-    public void setFame(String fame) {
-        this.fame = fame;
-    }
 }

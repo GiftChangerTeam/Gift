@@ -36,14 +36,16 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="293dp"
+        android:id="@+id/recyclerview1"
         android:layout_height="379dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/button"
+        android:id="@+id/buton"
         android:layout_width="207dp"
         android:layout_height="50dp"
         android:background="@drawable/shape"
